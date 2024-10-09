@@ -7,3 +7,6 @@ let rec addlist l =
   | [] -> 0
   (* Otherwise, it adds the head of the list to the result of recursively calling addlist on the tail of the list.*)
   | head :: tail -> head + addlist tail
+
+(* Equivalent to 
+let addlist l = List.fold_left ( + ) 0 l *)
